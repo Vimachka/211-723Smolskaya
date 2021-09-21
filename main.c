@@ -8,16 +8,20 @@
 #include <stdio.h>
 
 int main() {
-
+    int a = 0;
+    int b = 0;
+   
+    float arif = 0;
+    printf("Введите целое число а: " );
+    scanf("%d", &a);
+    printf ("введите целое число b: ");
+    scanf("%d", &b);
+  
     
+    arif = (a + b) / 2.0 ;
+    printf("Среднее арифметическое = %.2f\n", arif);
     
-    float a = 0;
-    printf("Введите длину диаметра:");
-    scanf("%f", &a);
-   float b = 3.14;
-    double l = 0;
-    l = a*b;
-    printf ("длина окружности = %.7f\n", l);
+ 
     return 0;
 }
  
