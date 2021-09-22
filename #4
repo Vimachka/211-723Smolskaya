@@ -14,7 +14,7 @@ int main() {
     printf("Сумма = %.2f\n", sum);
     printf ("Разность = %.2f\n", dif);
     printf("Произведение = %.2f\n", mul);
-    printf("= %.2f\n", c);
+    printf(" Частное квадратов = %.2f\n", c);
     
     return 0;
     
