@@ -1,0 +1,155 @@
+№1  
+#include <stdio.h>
+
+
+int main() {
+    float a, b, c;
+    printf("Введите значение переменных А и В ");
+    scanf("%f%f", &a, &b);
+    c = a;
+    a = b;
+    b = c;
+    printf("Новые значения: A = %.2f\n", a);
+    printf ("B = %.2f\n", b);
+    return 0;
+    
+}
+
+№2 
+#include <stdio.h>
+
+
+int main() {
+    float a, b, c, l, k;
+    printf("Введите значение переменных А и В и С: ");
+    scanf("%f%f%f", &a, &b, &c);
+    k = a;
+    a = b;
+    l = b;
+    b  = c;
+    c = k;
+    
+    printf("Новые значения: A = %.2f\n", a);
+    printf ("B = %.2f\n", b);
+    printf("C = %.2f\n", c);
+    return 0;
+    
+}
+
+№3
+  #include <stdio.h>
+
+
+int main() {
+    float a, b, c, l, k;
+    printf("Введите значение переменных А и В и С: ");
+    scanf("%f%f%f", &a, &b, &c);
+    k = a;
+    a = c;
+    l = b;
+    b  = k;
+    c = l;
+    
+    printf("Новые значения: A = %.2f\n", a);
+    printf ("B = %.2f\n", b);
+    printf("C = %.2f\n", c);
+    return 0;
+    
+}
+
+
+№4
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x, y;
+    printf("Введите значение переменных x: ");
+    scanf("%f", &x);
+          y = 3 * pow(x, 6) - 6 * pow(x, 2) - 7;
+    
+          printf(" ответ = %.2f\n", y);
+    return 0;
+    
+}
+
+№5
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x, y;
+    printf("Введите значение переменных x: ");
+    scanf("%f", &x);
+          y = 4 * pow((x-3), 6) - 7 * pow((x-3), 3) + 2;
+    
+          printf(" ответ = %.2f\n", y);
+    return 0;
+    
+}
+
+№6
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, q;
+    printf("Введите значение переменной a: ");
+    scanf("%f", &a);
+    q = a * a;
+    
+    q = q * q;
+    
+    
+    
+    printf("ответ = %.2f\n", q * q);
+    return 0;
+    
+}
+№ 7 (1)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, q, r;
+    printf("Введите значение переменной a: ");
+    scanf("%f", &a);
+    q = a * a * a ;
+    r = q * q ;
+    
+   
+    
+ 
+    
+   
+
+    printf("ответ = %.2f\n", r * r * q); 
+
+    
+}
+
+
+(2)
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float a, q, r;
+    printf("Введите значение переменной a: ");
+    scanf("%f", &a);
+    q = a * a;
+    q = q * q * q * q;
+    r = q * q;
+    
+ 
+    
+   
+    
+    
+    
+    printf("ответ = %.2f\n", r/a);  // в условии не было сказано про деление, но наверное, так неправильно по заданию.
+
+    
+}
+
+
