@@ -88,7 +88,7 @@ int main () {
 int main () {
    float  a, b;
     float x;
-    printf ("Введите коэф. А ");
+    printf ("Введите коэф. А ≠ 0 ");
     scanf("%f", &a);
     printf(" Введите коэф. B ");
     scanf("%f", &b);
@@ -101,3 +101,26 @@ int main () {
 }
 
 №6
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    int a1,b1,a2,b2,c1,c2,x,y;
+    
+    printf("Введите коэф. системы уравнений, сначала первого, затем второго: ");
+    scanf("%d%d%d%d", &a1, &b1, &a2, &b2);
+    printf("Введите ответы уравнений: ");
+    scanf("%d%d", &c1, &c2);
+
+    
+    y = ( (a1 * c2) - (c1 * a2) ) / ((b2 * a1) - (b1 * a2)) ;
+    
+    x = ( c2 - b2 * y) / a2;
+    
+    
+    printf ("x = %d\n", x);
+    printf("y = %d\n", y);
+    return 0;
+}
+
+
