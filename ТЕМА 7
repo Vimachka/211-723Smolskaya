@@ -1,0 +1,103 @@
+№1
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    
+    float a, pi;
+    printf("Введите значение угла от 0 до 360: ");
+    scanf("%f", &a);
+    
+    pi= (a * M_PI / 180 );
+    
+    printf("Угол в радианах = %.5f\n" , pi);
+    
+    
+    
+    return 0;
+}
+
+№2
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    int a;
+    float  pi;
+    printf("Введите значение угла в радианах от 0 до 2п (6.28) ");
+    scanf("%f", &pi);
+    
+    a = ( pi * 180 /  M_PI ) ;
+    
+    printf("Угол в градусах  = %d\n" , a);
+    
+    
+    
+    return 0;
+}
+
+
+№3 
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    float  x, A, y, z, p;
+    printf("Сколько кг конфет?  ");
+    scanf("%f", &x);
+    printf("Какая стоимость за это в руб.? ");
+    scanf("%f", &A);
+    z = A / x ;
+    printf("Цена за 1 кг = %.3f руб.\n", z);
+    printf("Введите кол-во кг у: ");
+    scanf("%f", &y);
+    p = (y * z);
+    printf("%.5f\n", p);
+   
+
+    return 0;
+}
+№4
+
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    float  v1, v2, t, s;
+    printf("Узнаем расстояние между двумя автомобилями в км. Введите скорость первого автомобиля в км/ч");
+    scanf("%f", &v1);
+    
+    printf("Введите скорость второго автомобиля в часах в км/ч ");
+    scanf("%f", &v2);
+    
+    printf("Через какое время определить расстояние? ");
+    scanf("%f", &t);
+    
+    s = (v1 + v2) * t;
+    printf("Расстояние между автомобилями через t часов %.4f км/n" , s);
+    
+
+    return 0;
+}
+
+№5
+
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+   float  a, b;
+    float x;
+    printf ("Введите коэф. А ");
+    scanf("%f", &a);
+    printf(" Введите коэф. B ");
+    scanf("%f", &b);
+    x = (- b / a) ;
+    
+    printf("Ответ = %.3f\n", x);
+    
+
+    return 0;
+}
+
+№6
