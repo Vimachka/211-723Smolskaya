@@ -1,0 +1,101 @@
+#5
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    int a1, r, q;
+    
+    printf("Придумайте 3х значное число  ");
+    scanf("%d", &a1);
+    r = (a1 % 100);
+    q = ( a1 / 100);
+    
+   printf(" Полученный результат = %d%d\n", r,q);
+ 
+    
+     
+    return 0;
+}
+
+
+  #4
+
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    int a1, r, q;
+    
+    printf("Придумайте 2х значное число  ");
+    scanf("%d", &a1);
+    r = (a1 % 10 );
+    q = ( a1 / 10);
+    
+   printf(" Полученный результат = %d%d\n", r,q);
+    
+     
+    return 0;
+}
+
+ #1
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    float b;
+   float kb;
+    int z = 1024;
+    
+    printf("Cколько байт?  ");
+    scanf("%f", &b);
+    kb = b / z;
+    
+    
+    printf("Кол-во целых  килобайтов = %.f\n", kb);
+    
+     
+    return 0;
+}
+ № 2
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    int a, b, n;
+    
+    printf("Введите длину отрезка А = ");
+    scanf("%d", &a);
+    printf("Введите длину отрезка В ( В < A) = ");
+    scanf("%d", &b);
+    
+    n = ( a / b );
+    
+    
+   printf(" Кол-во отрезков В размещенных  на А = %d\n", n);
+ 
+    
+     
+    return 0;
+}
+
+№3
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+    int a, b;
+    float n, l;
+    printf("Введите длину отрезка А = ");
+    scanf("%d", &a);
+    printf("Введите длину отрезка В ( В < A) = ");
+    scanf("%d", &b);
+    
+    n = ( a / b );
+    l = (a - n * b );
+    
+   printf(" Оставшаяся часть на отрезке А  = %.4f\n", l);
+ 
+    
+     
+    return 0;
+}
