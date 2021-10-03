@@ -1,0 +1,100 @@
+#1	
+
+#include <stdio.h>
+int main()
+{
+    int n, o;
+    printf("Введите секунды");
+    scanf("%d", &n);
+    o = n % 60 ;
+    
+   
+    printf ("%d\n", o);
+}
+
+
+#2
+#include <stdio.h>
+int main(void)
+{
+    int k,n, day;
+    printf("Введите номер К-дня года");
+    scanf("%d", &k);
+
+    printf("Введите номер недели 1 января этого года:");
+    scanf ("%d", &n);
+    
+    day = k%7; // остаток от деления. (Т.к первый день – понедельник, то остаток от деления = 1 )
+ 
+    printf("%d\n", day);
+ 
+    return 0;
+}
+
+#3
+#include <stdio.h>
+
+int main(void)
+{
+    int k,n, day;
+    printf("Введите номер К-дня года");
+    scanf("%d", &k);
+
+    printf("Введите номер недели 1 января этого года:");
+    scanf ("%d", &n);
+    
+    day = (k+n-1)%7;
+
+    if (day == 0)
+        printf ("воскресенье");
+    if (day == 1)
+        printf("понедельник");
+    if (day == 2)
+        printf ("вторник");
+    if (day == 3)
+        printf ("среда");
+    if (day == 4)
+        printf("четверг");
+        if (day == 5)
+            printf("пятница");
+    if (day == 6)
+        printf("суббота");
+   
+    return 0;
+}
+
+#4
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a,b,c,n,s1;
+    printf("Введите сторону прямоугольника А =");
+    scanf("%d", &a);
+    printf("Введите сторону прямоугольника В =");
+    scanf("%d", &b);
+    printf("Введите сторону квадрата С =");
+    scanf("%d", &c);
+    n = ( a * b ) / pow(c, 2);
+    s1 = ( a * b) - n * pow(c, 2);
+    printf("Кол-во квадратов = %d\n", n);
+    printf("Площадь незанятой части прямоугольника = %d\n", s1);
+    return 0;
+}
+
+#5
+
+#include <stdio.h>
+int main()
+{
+    int year,century;
+    printf("Введите год:");
+    scanf("%d", &year);
+    
+    century = (year-1)/100 + 1;
+    
+    printf("Столетие  - %d\n", century);
+    return 0;
+}
+
+
