@@ -7,11 +7,14 @@ int main() {
     
     printf("Введите два любых числа неравных нулю: ");
     scanf("%f%f", &x,&y);
+    x = fabsf (x);
+    y = fabsf (y);
+    
+    
     sum = x + y ;
     dif = x - y ;
     mul = x * y ;
-
-    c =  fabsf(x) / fabsf (y);
+    c =  x / y;
     
     printf("Сумма = %.2f\n", sum);
     printf ("Разность = %.2f\n", dif);
