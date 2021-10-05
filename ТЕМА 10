@@ -1,0 +1,143 @@
+# 1
+
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+    int a,b;
+    printf("Введите числа А и В ");
+    scanf("%d%d", &a, &b);
+      if (a > 2 & b <= 3)
+          printf("Справедливое неравенство\n");
+    else
+        printf("Несправедливое неравенство\n");
+
+   
+    return 0;
+}
+
+# 2
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+    int a,b,c;
+    printf("Введите числа А, В и С ");
+    scanf("%d%d%d", &a, &b, &c);
+      if (a < b  & b < c)
+          printf("Справедливое неравенство\n");
+    else
+        printf("Несправедливое неравенство\n");
+
+   
+    return 0;
+}
+
+#3
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a;
+    printf("Введите положительное число А ");
+    scanf("%d", &a);
+    if  ( a%2==0 && a >= 10 && a < 100)
+        
+          printf("Справедливое неравенство\n");
+    else
+        printf("Несправедливое неравенство\n");
+
+   
+    return 0;
+}
+
+№4
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, f, s , t;
+    printf("Введите 3xзначное число А ");
+    scanf("%d", &a);
+    a = abs(a);
+    
+    f = a / 100 ;
+    s = (a % 100) / 10;
+    t = a % 10;
+    if (f > s && s > t)
+        printf("Цифры данного числа образуют убывающую последовательность\n");
+        else if (f < s && s < t)
+            printf("Цифры данного числа образуют возрастающую последовательность\n");
+    else
+        printf("Цифрв данного числа не образуют последовательность\n");
+  
+    
+    return 0;
+}
+№5
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, f, s , t, k;
+    printf("Введите 4xзначное число А ");
+    scanf("%d", &a);
+    a = abs(a);
+    k = a % 10;
+    f = a / 1000 ;
+    s = (a % 1000) / 100;
+    t = (a % 100) / 10;
+    
+    if (f == k && s == t)
+        printf("Данное число читается одинаково слева направо и справа налево\n");
+      
+    else
+     printf("Данное число не читается одинаково слева направо и справа налево\n");
+  
+    
+    return 0;
+}
+№6
+#include <stdio.h>
+
+#include <math.h>
+int main()
+{
+    int a, b,c;
+    printf("Введите 3 целых числа,являющихся сторонами треугольника ");
+    
+    scanf("%d%d%d", &a, &b, &c);
+   if ( a + b > c && a + c > b  && b + c > a )
+        printf("Треугольник с такими сторонами существует\n");
+    else
+        printf("Треугольника с такими сторонами не существует, введите другие числа\n");
+        
+    if ( pow(a, 2) + pow(b, 2)== pow(c, 2)|| pow(b, 2) + pow(c, 2) == pow(a, 2)|| pow(c, 2) + pow(a, 2) == pow(b, 2) )
+        printf ("Треугольник прямоугольный\n ");
+    else
+        printf("Треугольник НЕ прямоугольный\n");
+        
+    return 0;
+}
+
+
+
+№7
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, b,c;
+    printf("Введите 3 целых числа ");
+    
+    scanf("%d%d%d", &a, &b, &c);
+   if ( a + b > c && a + c > b  && b + c > a)
+        printf("Треугольник с такими сторонами существует\n");
+    else
+        printf("Треугольника с такими сторонами не существует\n");
+    
+    return 0;
+}
+
+
+
