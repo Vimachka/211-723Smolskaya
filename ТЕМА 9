@@ -37,28 +37,28 @@ int main(void)
 int main(void)
 {
     int k,n, day;
-    printf("Введите номер К-дня года");
+    printf("Введите номер К-дня года ");
     scanf("%d", &k);
 
-    printf("Введите номер недели 1 января этого года:");
+    printf("Введите номер недели 1 января этого года: ");
     scanf ("%d", &n);
     
     day = (k+n-1)%7;
 
     if (day == 0)
-        printf ("воскресенье");
+        printf ("воскресенье\n");
     if (day == 1)
-        printf("понедельник");
+        printf("понедельник\n");
     if (day == 2)
-        printf ("вторник");
+        printf ("вторник\n");
     if (day == 3)
-        printf ("среда");
+        printf ("среда\n");
     if (day == 4)
-        printf("четверг");
+        printf("четверг\n");
         if (day == 5)
-            printf("пятница");
+            printf("пятница\n");
     if (day == 6)
-        printf("суббота");
+        printf("суббота\n");
    
     return 0;
 }
