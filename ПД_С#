@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ПД
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ind = -1, q;
+            int s;
+            string[][] book = new string[25][];
+            for (int i = 0; i <25; i++)
+            {
+                book[i] = new string[4];
+            }
+           // book[0][0] = "Library";
+           // Console.WriteLine(book [0][0]);
+
+             
+            do
+            {
+                
+              Console.Write("Приветствуем вас в 'World of books'! Желаете узнать новинки?: (y=1/n=0) ");
+                s = Convert.ToInt32(Console.ReadLine());
+
+                if (s == 1)
+                {
+                    ind += 1;
+                    Console.WriteLine("Введите название книги: ");
+                    book[ind][0] = Console.ReadLine();
+                    Console.WriteLine("Введите автора книги: ");
+                    book[ind][1] = Console.ReadLine();
+                    Console.WriteLine("Введите кол-во страниц книги: ");
+                    book[ind][2] = Console.ReadLine();
+                    Console.WriteLine("Введите стоимость книги: ");
+                    book[ind][3] = Console.ReadLine();
+                }
+                else break;
+
+                
+            } while (s !=0);
+
+            Console.WriteLine("Желаете увидеть весь список рассмотренных книг? ");
+             int  k = Convert.ToInt32(Console.ReadLine());
+            if (k == 1)
+            {
+                for (int i = 0; i <= ind; i++)
+                {
+                    Console.WriteLine("Название " + (i+1) + " книги " + book[i][0]);
+                    Console.WriteLine("Автор " + (i+1) + " книги " + book[i][1]);
+                    Console.WriteLine("Кол-во страниц " + (i+1) + " книги " + book[i][2]);
+                    Console.WriteLine( "Стоимость " + (i+1) + " книги " + book[i][3]);
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("До свидания!");
+            }
+             
+
+        }
+    }
+}
